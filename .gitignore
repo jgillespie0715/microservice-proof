@@ -11,6 +11,8 @@ event-bus/package-lock.json
 event-bus/node_modules
 query/node_modules
 query/package-lock.json
+moderation/node_modules
+moderation/package-lock.json
 /.pnp
 .pnp.js
 
