@@ -8,6 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+// comments service "database"
 const commentsByPostId = {};
 
 app.get('/posts/:id/comments', (req, res) => {

@@ -8,6 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+// posts service "database"
 const posts = {};
 
 app.get('/posts', (req, res) => {

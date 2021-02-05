@@ -5,8 +5,13 @@ const axios = require('axios');
 const app = express();
 app.use(bodyParser.json());
 
+// event bus "database"
+const events = [];
+
 app.post('/events', (req, res) => {
 	const event = req.body;
+
+	events.push(event);
 	// posts service
 	try {
 		axios.post('http://localhost:4000/events', event);
@@ -32,6 +37,10 @@ app.post('/events', (req, res) => {
 		console.log('error in event bus moderation endpoint', error);
 	}
 	res.send({ status: 'OK' });
+});
+
+app.get('/events', (req, res) => {
+	res.send(events);
 });
 
 app.listen(4005, () => {
