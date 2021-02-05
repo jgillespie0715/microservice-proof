@@ -19,7 +19,7 @@ app.post('/events', (req, res) => {
 		console.log('comments endpoint', error);
 	}
 
-	// axios.post('http://localhost:4002/events', event);
+	axios.post('http://localhost:4002/events', event);
 
 	res.send({ status: 'OK' });
 });

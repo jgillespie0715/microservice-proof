@@ -9,6 +9,8 @@ comments/package-lock.json
 posts/package-lock.json
 event-bus/package-lock.json
 event-bus/node_modules
+query/node_modules
+query/package-lock.json
 /.pnp
 .pnp.js
 
@@ -16,7 +18,7 @@ event-bus/node_modules
 /coverage
 
 # production
-/build
+client/build
 
 # misc
 .DS_Store
