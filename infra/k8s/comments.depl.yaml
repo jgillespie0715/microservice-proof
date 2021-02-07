@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: comments
-          image: jgillespie0715/comments
+          image: us.gcr.io/microservice-proof/comments
 ---
 apiVersion: v1
 kind: Service

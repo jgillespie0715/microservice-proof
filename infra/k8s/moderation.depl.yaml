@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: moderation
-          image: jgillespie0715/moderation
+          image: us.gcr.io/microservice-proof/moderation
 ---
 apiVersion: v1
 kind: Service

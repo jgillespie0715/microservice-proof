@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: query
-          image: jgillespie0715/query
+          image: us.gcr.io/microservice-proof/query
 ---
 apiVersion: v1
 kind: Service

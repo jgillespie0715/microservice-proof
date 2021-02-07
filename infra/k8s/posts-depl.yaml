@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: posts
-          image: jgillespie0715/posts
+          image: us.gcr.io/microservice-proof/posts
 ---
 apiVersion: v1
 kind: Service

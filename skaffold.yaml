@@ -5,10 +5,12 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: microservice-proof
   artifacts:
-    - image: jgillespie0715/client
+    - image: us.gcr.io/microservice-proof/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -16,7 +18,7 @@ build:
         manual:
           - src: 'src/**/*.js'
             dest: .
-    - image: jgillespie0715/comments
+    - image: us.gcr.io/microservice-proof/comments
       context: comments
       docker:
         dockerfile: Dockerfile
@@ -24,7 +26,7 @@ build:
         manual:
           - src: '*.js'
             dest: .
-    - image: jgillespie0715/event-bus
+    - image: us.gcr.io/microservice-proof/event-bus
       context: event-bus
       docker:
         dockerfile: Dockerfile
@@ -32,7 +34,7 @@ build:
         manual:
           - src: '*.js'
             dest: .
-    - image: jgillespie0715/moderation
+    - image: us.gcr.io/microservice-proof/moderation
       context: moderation
       docker:
         dockerfile: Dockerfile
@@ -40,7 +42,7 @@ build:
         manual:
           - src: '*.js'
             dest: .
-    - image: jgillespie0715/posts
+    - image: us.gcr.io/microservice-proof/posts
       context: posts
       docker:
         dockerfile: Dockerfile
@@ -48,7 +50,7 @@ build:
         manual:
           - src: '*.js'
             dest: .
-    - image: jgillespie0715/query
+    - image: us.gcr.io/microservice-proof/query
       context: query
       docker:
         dockerfile: Dockerfile

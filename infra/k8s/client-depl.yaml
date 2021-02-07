@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: jgillespie0715/client
+          image: us.gcr.io/microservice-proof/client
 ---
 apiVersion: v1
 kind: Service
