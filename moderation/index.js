@@ -15,7 +15,7 @@ app.post('/events', async (req, res) => {
 		console.log('status in moderation svc: ', status);
 		// docs shoudl list properties of each event
 		try {
-			await axios.post('http://localhost:4005/events', {
+			await axios.post('http://event-bus-srv:4005/events', {
 				type: 'CommentModerated',
 				data: {
 					id: data.id,
