@@ -1,4 +1,4 @@
-![microservices-proof](.../media/title-image.png?raw=true)
+![microservices-proof](https://www.github.com/jgillespie0715/microservice-proof/blob/media/title-image.png?raw=true)
 
 # microservices-proof
 
@@ -22,8 +22,8 @@
 
 `minikube addons enable ingress`
 
-![minikube start --driver=hyperkit](.../media/minikube-ingress-start.png?raw=true)
-![minikube addons enable ingress](.../media/minikube-start-ingress2.png?raw=true)
+![minikube start --driver=hyperkit](https://www.github.com/jgillespie0715/microservice-proof/blob/media/minikube-ingress-start.png?raw=true)
+![minikube addons enable ingress](https://www.github.com/jgillespie0715/microservice-proof/blob/media/minikube-start-ingress2.png?raw=true)
 Note for Minikube Users and the Docker Driver
 
 Recent versions of Minikube will use the docker driver by default when you run minikube start. On Windows or macOS, the docker driver is not compatible with an ingress, which we will be using throughout the course.
@@ -63,7 +63,7 @@ or
 https://github.com/kubernetes/minikube/issues/7332
 
 - here is a workaround
-  ![virtualbox workaroud](.../media/virtualbox.png?raw=true)
+  ![virtualbox workaroud](https://www.github.com/jgillespie0715/microservice-proof/blob/media/virtualbox.png?raw=true)
 
 **Deployment**
 
