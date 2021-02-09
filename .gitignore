@@ -33,4 +33,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /notes.js
-comments/request.http
+/request.http
+/ms3
+/infra/k8s/posts.srv.yaml
+infra/k8s/posts.yaml.old

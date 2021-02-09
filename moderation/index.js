@@ -11,7 +11,7 @@ app.post('/events', async (req, res) => {
 	console.log('received event: ', req.body.type);
 
 	if (type === 'CommentCreated') {
-		const status = data.content.includes('orange') ? 'rejected' : 'approved';
+		const status = data.content.includes('Bigfoot') ? 'rejected' : 'approved';
 		console.log('status in moderation svc: ', status);
 		// docs shoudl list properties of each event
 		try {
