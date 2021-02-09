@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ![microservices-proof](https://www.github.com/jgillespie0715/microservice-proof/blob/media/title-image.png?raw=true)
 
 # microservices-proof
@@ -94,7 +93,3 @@ https://github.com/kubernetes/minikube/issues/7332
 For major changes, please open an issue first to discuss what you would like to change, pull requests are welcome. Thank you!
 
 - Justin Gillespie - [jgillespie0715](https://github.com/jgillespie0715)
-=======
-# microservice-proof
-A microservices proof of concept app for Allok8 testing. NOT PRODUCTION GRADE.
->>>>>>> ebb41610f49137d9105dfafe4c6db75b17f1ea4f
